@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Poppins", sans-serif;
+}
+body{
+    background-image: url("../img/fundo.jpg");
+}
+.geral{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bloco{
+    background-color: #dcb99f;
+    border: 1px solid #5d3c27;
+    padding: 10%;
+    box-shadow: 0 2px 4px #5d3c27;
+    border-radius: 10px;
+}
+#noteInput{
+    background-color: transparent;
+}
+#saveButton{
+    border: 1px solid #5d3c27;
+    padding: 2%;
+    box-shadow: 0 2px 4px #5d3c27;
+    background-color: transparent; 
+}
+#saveButton:hover{
+    background-color: #9c7868be;
+    transform: scale(1.05); 
+}
+.container-notes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid #5d3c27;
+    padding: 4%;
+    box-shadow: 0 2px 4px #5d3c27;
+    border-radius: 10px;
+    background-color: #5d3c27a9;
+}
+#notes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+.note{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../img/postit.png");
+    max-width: 250px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.note p{
+    padding: 10%;
+    color: #fff;
+}
+.note button{
+    border: 1px solid #5d3c27;
+    padding: 5%;
+    box-shadow: 0 2px 4px #5d3c27;
+    background-color: #dcb99f; 
+}
+.note button:hover{
+    background-color: #ccad96;
+    transform: scale(1.05);
+}
